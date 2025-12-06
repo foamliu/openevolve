@@ -1,0 +1,8 @@
+2025-12-06 11:41:00,614 - openevolve.controller - INFO - Logging to examples/function_minimization\openevolve_output\logs\openevolve_20251206_114100.log
+2025-12-06 11:41:00,619 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2025-12-06 11:41:00,652 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: kimi-k2-0905-preview
+2025-12-06 11:41:00,671 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: kimi-k2-0905-preview (weight: 0.80), kimi-k2-0905-preview (weight: 0.20)
+2025-12-06 11:41:00,706 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: kimi-k2-0905-preview (weight: 0.80), kimi-k2-0905-preview (weight: 0.20)
+2025-12-06 11:41:00,708 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2025-12-06 11:41:00,709 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-12-06 11:41:00,709 - openevolve.database - INFO - Initialized program database with 0 programs

@@ -1,0 +1,5 @@
+2025-12-06 18:44:53,704 - openevolve.controller - INFO - Logging to examples/function_minimization\openevolve_output\logs\openevolve_20251206_184453.log
+2025-12-06 18:44:53,709 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2025-12-06 18:44:53,749 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: kimi-k2-0905-preview
+2025-12-06 18:44:53,771 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: kimi-k2-0905-preview (weight: 0.80), kimi-k2-0905-preview (weight: 0.20)
+2025-12-06 18:44:53,813 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: kimi-k2-0905-preview (weight: 0.80), kimi-k2-0905-preview (weight: 0.20)

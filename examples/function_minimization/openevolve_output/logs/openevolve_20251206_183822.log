@@ -1,0 +1,3 @@
+2025-12-06 18:38:22,492 - openevolve.controller - INFO - Logging to examples/function_minimization\openevolve_output\logs\openevolve_20251206_183822.log
+2025-12-06 18:38:22,496 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2025-12-06 18:38:22,497 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: 
