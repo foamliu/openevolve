@@ -34,4 +34,4 @@ ax2d.set_ylabel('y')
 ax2d.set_aspect('equal')
 
 plt.tight_layout()
-plt.show(
+plt.show()
