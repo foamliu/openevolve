@@ -201,9 +201,15 @@ class OpenEvolve:
         )
         root_logger.addHandler(file_handler)
 
-        # Add console handler
+        # Add console handler with UTF-8 encoding for Windows compatibility
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(logging.Formatter("%(asctime)s - %(levelname)s - %(message)s"))
+        import io
+        console_handler.stream = io.TextIOWrapper(
+                console_handler.stream.buffer,
+                encoding='utf-8',
+                errors='replace'
+            )
         root_logger.addHandler(console_handler)
 
         logger.info(f"Logging to {log_file}")
