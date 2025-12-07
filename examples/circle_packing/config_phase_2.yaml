@@ -5,14 +5,18 @@ log_level: "INFO"
 
 # LLM configuration
 llm:
-  primary_model: "google/gemini-2.0-flash-001"
+  # primary_model: "google/gemini-2.0-flash-001"
   # primary_model: "llama3.1-8b"
+  primary_model: "deepseek-v3-2-251201"
   primary_model_weight: 0.8
-  secondary_model: "anthropic/claude-3.7-sonnet"
+  # secondary_model: "anthropic/claude-3.7-sonnet"
   # secondary_model: "llama-4-scout-17b-16e-instruct"
+  secondary_model: "deepseek-v3-2-251201"
   secondary_model_weight: 0.2
-  api_base: "https://openrouter.ai/api/v1"
+  # api_base: "https://openrouter.ai/api/v1"
   # api_base: "https://api.cerebras.ai/v1"
+  api_base: "https://ark.cn-beijing.volces.com/api/v3/"
+  api_key: ""
   temperature: 0.7
   top_p: 0.95
   max_tokens: 8192
