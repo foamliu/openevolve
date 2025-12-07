@@ -96,15 +96,15 @@ import pickle
 import traceback
 
 # Add the directory to sys.path
-sys.path.insert(0, os.path.dirname('{program_path}'))
+sys.path.insert(0, os.path.dirname({repr(program_path)}))
 
 # Debugging info
 print(f"Running in subprocess, Python version: {{sys.version}}")
-print(f"Program path: {program_path}")
+print(f"Program path: {repr(program_path)}")
 
 try:
     # Import the program
-    spec = __import__('importlib.util').util.spec_from_file_location("program", '{program_path}')
+    spec = __import__('importlib.util').util.spec_from_file_location("program", {repr(program_path)})
     program = __import__('importlib.util').util.module_from_spec(spec)
     spec.loader.exec_module(program)
     
@@ -120,17 +120,17 @@ try:
         'sum_radii': sum_radii
     }}
 
-    with open('{temp_file.name}.results', 'wb') as f:
+    with open({repr(temp_file.name)} + '.results', 'wb') as f:
         pickle.dump(results, f)
-    print(f"Results saved to {temp_file.name}.results")
+    print(f"Results saved to {repr(temp_file.name)}.results")
     
 except Exception as e:
     # If an error occurs, save the error instead
     print(f"Error in subprocess: {{str(e)}}")
     traceback.print_exc()
-    with open('{temp_file.name}.results', 'wb') as f:
+    with open({repr(temp_file.name)} + '.results', 'wb') as f:
         pickle.dump({{'error': str(e)}}, f)
-    print(f"Error saved to {temp_file.name}.results")
+    print(f"Error saved to {repr(temp_file.name)}.results")
 """
         temp_file.write(script.encode())
         temp_file_path = temp_file.name
